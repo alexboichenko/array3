@@ -1,16 +1,19 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+import TK_1
+import TK_2
+import TK_3
+import importlib
 
 
-# Press the green button in the gutter to run the script.
+def main():
+    TK_4 = importlib.import_module('TK-4')
+    TK_5 = importlib.import_module('TK-5')
+    test_list = TK_1.input_data_to_list(5)
+    print(test_list)
+    print(TK_2.search_min_max_value_in_list(test_list))
+    print(TK_3.list_mean_value(test_list))
+    print(TK_4.list_multi_values_with_mean_value(test_list))
+    print(TK_5.list_square_root_values(test_list))
+
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    main()
