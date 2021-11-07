@@ -1,11 +1,11 @@
 import TK_1
 import TK_2
 import TK_3
+import TK_4
 import importlib
 
 
 def main():
-    TK_4 = importlib.import_module('TK-4')
     TK_5 = importlib.import_module('TK-5')
     test_list = TK_1.input_data_to_list(5)
     print(test_list)
